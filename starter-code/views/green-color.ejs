@@ -1,0 +1,19 @@
+<h2> Green Colors </h2>
+
+<div>
+  <ul>
+    <% allGreen.forEach((oneColor) => { %>
+      <% if(oneColor.category === "green" ){ %>
+
+
+      <li>
+      <p class="colorBox" style="background-color: <%= oneColor.hex %>"> </p>
+        <p class="keyW"> <%= oneColor.keyword %> </p>
+        <p class="keyW"> <%= oneColor.hex %> </p>
+
+      </li>
+
+    <% } %>
+    <% }) %>
+  </ul>
+</div>

@@ -1,0 +1,17 @@
+
+
+    <h2> All Color </h2>
+
+    <div>
+      <ul class="flex">
+        <% colorListt.forEach((oneColor) => { %>
+          <li>
+            <p class="colorBox" style="background-color: <%= oneColor.hex %>"> </p>
+
+            <p class="keyW"> <%= oneColor.keyword %> </p>
+            <p class="keyW"> <%= oneColor.hex %> </p>
+
+          </li>
+      <% }) %>
+      </ul>
+    </div>

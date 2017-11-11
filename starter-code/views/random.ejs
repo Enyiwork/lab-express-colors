@@ -1,0 +1,22 @@
+<h2> Random Color </h2>
+
+<div class="randN">
+  <p class="colorBox" style="background-color: <%= randomNum.hex %>"> </p>
+  <p class="keyW"> <%= randomNum.keyword %> </p>
+  <p class="keyW"> <%= randomNum.hex %> </p>
+
+</div>
+
+<div>
+  <ul>
+    <% randNum.forEach((oneColor) => { %>
+      <li>
+      <p class="colorBox" style="background-color: <%= oneColor.hex %>"> </p>
+      <p class="keyW"> <%= oneColor.keyword %> </p>
+      <p class="keyW"> <%= oneColor.hex %> </p>
+
+      </li>
+
+    <% }) %>
+  </ul>
+</div>
