@@ -193,7 +193,7 @@ app.get("/pink-color", (req, res, next) => {
 
 app.get("/random-color", (req, res, next) => {
   const randNum = Math.floor(Math.random() * colors.length);
-  res.locals.randomNum = colors[randNum]
+  res.locals.randomNum = colors[randNum];
   res.locals.randNum = colors;
 
   res.render("random.ejs");
